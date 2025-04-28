@@ -1,9 +1,9 @@
-import { useState } from 'react';
+import { useState } from 'react'
+import MonFooter from './Composants/footer/Footer';
 import Card from './components/card/Card.jsx';
 import Filtre from './components/filtre/Filtre.jsx';
 import Compteur from './components/calcul/Compteur.jsx';
 
-// Tableau complet des recettes avec toutes les images
 const recettes = [
   { 
     titre: "Bowl Mangue",
@@ -208,3 +208,6 @@ function App() {
 }
 
 export default App;
+    
+     
+
