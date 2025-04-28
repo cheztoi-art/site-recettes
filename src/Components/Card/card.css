@@ -1,13 +1,14 @@
 /* On enlève les marges et espacements par défaut du navigateur */
-body {
+/*
+* {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
+*/
 
 /* Conteneur principal des cartes */
 main {
-
   display: flex; /* met les cartes côte à côte */
   flex-wrap: wrap; /* passe à la ligne si plus de place */
   justify-content: center; /* centre les cartes */

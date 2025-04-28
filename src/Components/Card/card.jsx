@@ -61,8 +61,6 @@ function Card({ image, titre, titre1, description, ingredients, couleur,personne
           })}
         </ul>
 
-
-
       </div>
     </div>
   );
