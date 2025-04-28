@@ -1,0 +1,25 @@
+.compteur{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.controle{
+    display: flex;
+    align-items: center;
+    gap:0.5rem;
+}
+.controle button{
+    padding: 0.3rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border: transparent;
+    background: transparent;
+  
+   
+
+}
+.controle span{
+    font-size: 1.2rem;
+    width: 30px;
+    text-align: center;
+}
