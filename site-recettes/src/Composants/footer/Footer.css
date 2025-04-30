@@ -1,0 +1,14 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    position: absolute;
+    background-color: #b6aeae;
+    width: 100vw;
+    height: 7rem;
+    bottom: 0;
+}
