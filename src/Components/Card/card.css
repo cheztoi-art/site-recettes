@@ -1,0 +1,78 @@
+/* On enlève les marges et espacements par défaut du navigateur */
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* Conteneur principal des cartes */
+main {
+
+  display: flex; /* met les cartes côte à côte */
+  flex-wrap: wrap; /* passe à la ligne si plus de place */
+  justify-content: center; /* centre les cartes */
+  width: 80%;
+  margin: 2rem auto; /* espace autour de la zone principale */
+  gap: 2rem; /* espace automatique entre les cartes (plus propre que margin sur les cartes) */
+  z-index: 1;
+}
+
+/* Style de base de chaque carte */
+.card-container {
+  position: relative; /* permet de positionner les enfants en absolu */
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  z-index: 1;
+}
+
+/* Image de fond visible derrière le texte */
+.card-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+/* Bloc de texte par-dessus l'image */
+.card-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  padding: 1rem;
+  z-index: 2;
+  transition: transform 0.5s ease;
+  font-size: 15px;
+  background: rgba(0, 0, 0, 0.6); /* si aucune couleur n’est passée en props */
+}
+
+/* Animation de glissement vers la droite */
+.card-content.slide-out {
+  transform: translateX(100%);
+}
+
+/* Titre principal */
+.titre {
+  font-size: 24px;
+}
+
+/* Sous-titre (ex: "Ingrédients :") */
+.titre1 {
+  font-size: 20px;
+}
+
+/* Liste des ingrédients */
+.card-text ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
