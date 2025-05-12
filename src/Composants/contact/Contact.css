@@ -1,15 +1,13 @@
 
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+
 
 section {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 1rem;
+    margin-top: 6rem;
 }
 
 h1 {
@@ -22,6 +20,8 @@ h1 {
 }
 
 form {
+    position: relative;
+    z-index: 10;
     justify-content: center;
     align-items: center;
     background-color: #c6bbbb;
@@ -45,6 +45,7 @@ input {
 }
 
 #btn {
+    
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 1rem;
     border-radius: 1rem;
@@ -53,7 +54,7 @@ input {
     background-color: #3d3636;
     color: white;
     width: 10rem;
-    margin: 1rem 0 auto auto
+    margin: 0 auto;
 }
 
 #msg {

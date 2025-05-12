@@ -14,6 +14,7 @@ main {
   width: 80%;
   margin: 2rem auto; /* espace autour de la zone principale */
   gap: 2rem; /* espace automatique entre les cartes (plus propre que margin sur les cartes) */
+  z-index: 1;
 }
 
 /* Style de base de chaque carte */
@@ -25,6 +26,7 @@ main {
   border-radius: 15px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
   cursor: pointer;
+  z-index: 1;
 }
 
 /* Image de fond visible derrière le texte */

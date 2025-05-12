@@ -1,8 +1,11 @@
 import { useState } from 'react'
-import MonFooter from './Composants/footer/Footer';
+
 import Card from './components/card/Card.jsx';
 import Filtre from './components/filtre/Filtre.jsx';
 import Compteur from './components/calcul/Compteur.jsx';
+import MonContact from './Composants/contact/Contact.jsx';
+import MonFooter from './Composants/footer/Footer';
+import MonNav from './Composants/nav/Nav.jsx';
 
 const recettes = [
   { 
@@ -188,6 +191,9 @@ function App() {
   );
 
   return (
+    <>
+    <MonNav/>
+   
     <div className="page">
       {/* Filtre */}
       <Filtre filtre={filtre} setFiltre={setFiltre} />
@@ -202,9 +208,15 @@ function App() {
         ) : (
           <p>Aucune recette trouvée</p>
         )}
+         
       </main>
+      <MonContact/>
+      <MonFooter/>
     </div>
+   
+    </>
   );
+
 }
 
 export default App;
