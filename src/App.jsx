@@ -21,9 +21,9 @@ const recettes = [
       
     ],
     couleur: "#9DCC9D",
-    personnes:4,
-    
+    personnes: 4,
   },
+
   {
     titre: "Bowl Concombre",
     image: "/image/bowlConcombre.jpeg",
@@ -34,12 +34,11 @@ const recettes = [
       { nom: "Concombre", quantite: 2},
       { nom: "Poire", quantite: 3},
       { nom: "Cerise", quantite: 2}
-      
     ],
     couleur: "#cbaf96",
     personnes:4,
-    
   },
+
   {
     titre: "Salade Été",
     image: "/image/saladeEte.jpeg",
@@ -50,12 +49,11 @@ const recettes = [
       { nom: "Pomme", quantite: 2},
       { nom: "Poire", quantite: 3},
       { nom: "Banane", quantite: 2}
-      
     ],
     couleur: "#bdb8f0",
     personnes:4,
-    
   },
+
   {
     titre: "Salade Hiver",
     image: "/image/saladeHiver.jpeg",
@@ -65,13 +63,12 @@ const recettes = [
       { nom: "Mangue", quantite: 1},
       { nom: "Pomme", quantite: 2},
       { nom: "Poire", quantite: 3},
-      { nom: "Banane", quantite: 2}
-      
+      { nom: "Banane", quantite: 2} 
     ],
     couleur: "#225542",
     personnes:4,
-    
   },
+
   {
     titre: "Bowl Potage 1",
     image: "/image/bowlPotage.jpeg",
@@ -82,12 +79,11 @@ const recettes = [
       { nom: "Pomme", quantite: 2},
       { nom: "Poire", quantite: 3},
       { nom: "Banane", quantite: 2}
-      
     ],
     couleur: "#57caf1",
     personnes:4,
-    
   },
+
   {
     titre: "Bowl Mille",
     image: "/image/bowlMille.jpeg",
@@ -98,12 +94,11 @@ const recettes = [
       { nom: "Pomme", quantite: 2},
       { nom: "Poire", quantite: 3},
       { nom: "Banane", quantite: 2}
-      
     ],
     couleur: "#fa46ee",
     personnes:4,
-    
   },
+
   {
     titre: "Bowl Potage 2",
     image: "/image/bowlPotage.jpeg",
@@ -114,11 +109,9 @@ const recettes = [
       { nom: "Pomme", quantite: 2},
       { nom: "Poire", quantite: 3},
       { nom: "Banane", quantite: 2}
-      
     ],
     couleur: "#fd7f68",
     personnes:4,
-    
   },
  
   {
@@ -131,12 +124,11 @@ const recettes = [
       { nom: "Pomme", quantite: 2},
       { nom: "Poire", quantite: 3},
       { nom: "Banane", quantite: 2}
-      
     ],
     couleur: "#eae10e",
     personnes:4,
-    
   },
+
   {
     titre: "Tropic Bowl",
     image: "/image/tropic.jpeg",
@@ -147,12 +139,11 @@ const recettes = [
       { nom: "Pomme", quantite: 2},
       { nom: "Poire", quantite: 3},
       { nom: "Banane", quantite: 2}
-      
     ],
     couleur: "#0eea95",
     personnes:4,
-    
   },
+
   {
     titre: "Délice Fruit 1",
     image: "/image/deliceFruit.jpeg",
@@ -163,20 +154,17 @@ const recettes = [
       { nom: "Pomme", quantite: 2},
       { nom: "Poire", quantite: 3},
       { nom: "Banane", quantite: 2}
-      
     ],
     couleur: "#1e1f3e",
     personnes:4,
-    
   },
- 
 ];
 
 function App() {
   const [filtre, setFiltre] = useState("");
   const [nombrePersonnes, setNombrePersonnes] = useState(4);
   
-  // Prend ce que l'utilisateur a écrit
+// Prend ce que l'utilisateur a écrit
 // Tout mettre en minuscules pour comparer facilement
 // Couper à chaque virgule pour avoir une liste
 // Enlever les espaces autour de chaque mot
@@ -193,12 +181,9 @@ function App() {
   return (
     <>
     <MonNav/>
-   
     <div className="page">
       {/* Filtre */}
       <Filtre filtre={filtre} setFiltre={setFiltre} />
-     
-
       {/* Cartes */}
       <main>
         {recettesFiltrees.length > 0 ? (
@@ -208,7 +193,6 @@ function App() {
         ) : (
           <p>Aucune recette trouvée</p>
         )}
-         
       </main>
       <MonContact/>
       <MonFooter/>

@@ -1,10 +1,9 @@
 
-
-
 .footer{
-   
-    background-color: black;
+    background-color: rgb(159, 155, 155);
     width: 100vw;
     height: 7rem;
     bottom: 0;
+    margin: 0;
+    position: fixed;
 } 

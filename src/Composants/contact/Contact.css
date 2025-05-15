@@ -1,13 +1,11 @@
 
-
-
 section {
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 1rem;
-    margin-top: 6rem;
+    margin-top: 1rem;
 }
 
 h1 {
@@ -29,7 +27,7 @@ form {
     border-radius: 1rem;
     color: rgb(0, 0, 0);
     padding: 1rem;
-    margin: 1rem;
+    margin: 0 2rem 1rem 2rem;
 }
 
 label {
@@ -45,7 +43,6 @@ input {
 }
 
 #btn {
-    
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 1rem;
     border-radius: 1rem;
