@@ -1,5 +1,6 @@
-import MonNav from './src/Composants/nav/Nav.jsx';
-import MonFooter from './src/Composants/footer/Footer.jsx';
+import MonNav from "./Composants/nav/Nav.jsx";
+import MonFooter from "./Composants/footer/Footer.jsx";
+
 import './Accueil.css';
 
 function Accueil() {
